@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scoring</title>
+</head>
+<body>
+    <form id="Scoring" action="http://localhost:555/hs/bank/send" method="POST">
+    <h1>Книжный мир</h1>
+    <fieldset id="Form">
+        <p><i>Пройдя этот опрос, вы очень поможете нам подбирать для вас лучшие книги</i></p>
+        <div class="formelement">
+            <label for="name">Имя</label>
+            <input id="name" name="user_name" placeholder="" required="" type="text"><br>
+        </div>
+        <div class="formelement">
+            <label for="name">Фамилия</label>
+            <input id="lastname" name="user_lastname" placeholder="" required="" type="text"><br>
+        </div>
+        <div class="formelement">
+            <label for="email">Электронная почта </label>
+            <input id="mail" name="user_mail" placeholder="" required="" type="text"><br>
+        </div>
+        <div class="formelement">
+            <div><b>Какие жанры книг вы предпочитаете?</b></div>
+            <div>
+                <input type="checkbox" name="option1" value="a1">Детектив<Br>
+                <input type="checkbox" name="option2" value="a2">Фантастика<Br>
+                <input type="checkbox" name="option3" value="a3">Романтика<Br> 
+                <input type="checkbox" name="option4" value="a4">Поэзия<Br> 
+                <input type="checkbox" name="option5" value="a5">Биографии<Br> 
+                <input type="checkbox" name="option5" value="a5">Исторический роман<Br> 
+                <input type="checkbox" name="option5" value="a5">Приключения<Br>
+                <input type="checkbox" name="option5" value="a5">Комиксы<Br>
+                <input type="checkbox" name="option5" value="a5">Юмор<Br>
+                <input type="checkbox" name="option5" value="a5">Фольклёр<Br>
+                <input type="checkbox" name="option5" value="a5">Научно-популярная литература
+            </div>
+        </div>
+        <div class="formelement">
+            <div>Насколько часто хотите получать уведомления</div>
+            <div>
+              <input type="radio" id="ChoiseNewBooksNotifications"
+               name="notifications" value="newBooksNotification">
+              <label for="newBooksNotification">Я хочу получать уведомления только о поступлении новых товаров.</label><br>
+          
+              <input type="radio" id="ChoiseStockNotifications"
+               name="notifications" value="stockNotifications">
+              <label for="stockNotifications">Я хочу получать уведомления только о товарах по акциям.</label><br>
+          
+              <input type="radio" id="ChoiseFullNotifications"
+               name="notifications" value="fullNotifications">
+              <label for="fullNotifications">Я хочу получать все уведомления.</label><br>
+            </div>
+        </div>
+        <div class="formelement">
+            <button type="submit">Submit</button>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>

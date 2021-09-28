@@ -1,0 +1,22 @@
+html{
+    background-color:cornflowerblue;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#Form{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:azure;
+    border: none;
+    font-family: sans-serif;
+}
+
+.formelement{
+    margin-top: 1em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
